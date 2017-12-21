@@ -5,18 +5,18 @@ personal test codes to learn how to use basic python
 ## os
 ```shell
 $ ./test_os.py
-__file__                                  : './os_test.py'
+__file__                                  : './test_os.py'
 os.getcwd()                               : '/mnt/c/cygwin64/home/Yuya/lesson_python/python_tutorial'
 os.path.dirname(__file__)                 : '.'
-os.path.abspath(__file__)                 : '/mnt/c/cygwin64/home/Yuya/lesson_python/python_tutorial/os_test.py'
+os.path.abspath(__file__)                 : '/mnt/c/cygwin64/home/Yuya/lesson_python/python_tutorial/test_os.py'
 os.path.dirname(os.path.abspath(__file__)): '/mnt/c/cygwin64/home/Yuya/lesson_python/python_tutorial'
 
 $ cd yaml
 $ ../test_os.py
-__file__                                  : './os_test.py'
-os.getcwd()                               : '/mnt/c/cygwin64/home/Yuya/lesson_python/python_tutorial'
-os.path.dirname(__file__)                 : '.'
-os.path.abspath(__file__)                 : '/mnt/c/cygwin64/home/Yuya/lesson_python/python_tutorial/os_test.py'
+__file__                                  : '../test_os.py'
+os.getcwd()                               : '/mnt/c/cygwin64/home/Yuya/lesson_python/python_tutorial/yaml'
+os.path.dirname(__file__)                 : '..'
+os.path.abspath(__file__)                 : '/mnt/c/cygwin64/home/Yuya/lesson_python/python_tutorial/test_os.py'
 os.path.dirname(os.path.abspath(__file__)): '/mnt/c/cygwin64/home/Yuya/lesson_python/python_tutorial'
 ```
 
@@ -137,6 +137,6 @@ optional arguments:
 ## sys, StringIO, datetime
 ``` shell
 $ ./test_sys_StringIO_datetime.py hoge foo bar
-Generate [./hoge.c]
+Generate [./generated_file1.c]
 -- end --
 ```
