@@ -1,0 +1,16 @@
+- name: talker
+  cluster: 1
+  publish: [/chatter]
+  subscribe: [/chatter6]
+- name: talker2
+  cluster: 1
+  publish: [/chatter2, /chatter3]
+  subscribe: []
+- name: listener
+  cluster : 2
+  publish: [/chatter4]
+  subscribe: [/chatter]
+- name: listener2
+  cluster : 2
+  publish: [/chatter5]
+  subscribe: [/chatter, /chatter2]
